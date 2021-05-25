@@ -1,0 +1,18 @@
+{
+"manifest_version": 2,
+    "name": "BETTERBLOX",
+    "description": "Whenever roblox changes the name of something like the Games page being turned into Discover, this extension will change it back!",
+	"permissions": ["tabs", "*://*.roblox.com/*"],
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.roblox.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
